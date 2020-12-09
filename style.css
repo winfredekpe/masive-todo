@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(46, 209, 46), rgb(31, 31, 196));
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+header,
+.input {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+.todo-input,
+.todo-button {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.815);
+  outline: none;
+  border: none;
+  margin-left: 5px;
+}
+
+.todo-input {
+  min-width: 40%;
+}
+
+.todo-button {
+  color: white;
+  background: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.todo-button:hover {
+  color: lime;
+  background: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.todo-list {
+  min-width: 70%;
+  list-style: none;
+}
+
+.todo {
+  background: rgba(255, 255, 255, 0.884);
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 70;
+  min-height: 4rem;
+  transition: all 0.34s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.todo > li {
+  flex: 1;
+}
+
+.complete-btn {
+  color: blue;
+  font-size: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-left: 10px;
+  /* pointer-events: none; */
+  outline: none;
+  border: none;
+}
+
+.complete-btn:hover {
+  font-size: 30px;
+  color: rgba(14, 14, 201, 0.87);
+}
+
+.trash-btn {
+  outline: none;
+  margin-left: 15px;
+  color: red;
+  font-size: 20px;
+  transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+  border: none;
+  /* pointer-events: none; */
+}
+
+.trash-btn:hover {
+  font-size: 30px;
+  color: rgba(212, 26, 26, 0.815);
+}
+
+.done {
+  opacity: 0.4;
+  text-decoration: line-through;
+  transform: rotateY(30deg);
+}
+
+.away {
+  transform: translateX(100rem);
+  opacity: 0.3;
+}
+
+select {
+  background: linear-gradient(35deg, rgba(2, 33, 168, 0.904), rgb(72, 207, 45));
+  padding: 8px;
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+}

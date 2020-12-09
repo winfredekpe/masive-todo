@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>Vonex To Do</h2>
+    </header>
+    <!-- the main input container  -->
+    <div class="input">
+      <input type="text" class="todo-input" />
+      <button class="todo-button fas fa-plus-circle addit"></button>
+
+      <!-- the filter section -->
+      <select class="filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </div>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+    <script src="all.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
